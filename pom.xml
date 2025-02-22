@@ -104,7 +104,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>hhttp://13.233.184.211:8081/repository/Flow-Snapshot/</url>
+	      <url>http://13.233.184.211:8081/repository/Flow-Snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
