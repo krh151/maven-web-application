@@ -5,7 +5,7 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>1.1.0</version>
+	<version>0.0.1-SNAPSHOT</version>
 	
 	<name>maven-web-application</name>
 
@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://35.154.65.227:9000/</sonar.host.url>
+		<sonar.host.url>http://13.126.95.245:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>Passw@rd</sonar.password> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Flow Releases Nexus Repository</name>
-	      <url>http://13.201.27.128:8081/repository/Flow-Release/</url>
+	      <url>http://13.232.169.198:8081/repository/Flow-Release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Flow Snapshot Nexus Repository </name>
-	      <url>http://13.201.27.128:8081/repository/Flow-Snapshot/</url>
+	      <url>http://13.232.169.198:8081/repository/Flow-Snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
