@@ -1,18 +1,17 @@
 node{
 
-def mavenHome = tool name: 'maven3.9.2'
+def mavenHome = tool name: "Maven-3.9.9"
 
 echo "Job name is: $JOB_NAME" 
 echo "Node name is: $NODE_NAME"
 echo "Jenkins Home url is: $JENKINS_HOME"
 
-properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
+properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5'))])
 
-stage('CheckOutCode'){
-git branch: 'development', credentialsId: '7234a3b2-097a-4e4b-a14d-a9e98131fa2b', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
+stage('checkoutcode'){
+git branch: 'Development', credentialsId: '3d39c1f5-a646-4f21-8baf-1d8898f9809f', url: 'https://github.com/krh151/maven-web-application.git'
 }
-
-stage('Build'){
+    stage('BuildPackage'){
 sh "${mavenHome}/bin/mvn clean package"
 }
 
